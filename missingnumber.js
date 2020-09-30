@@ -19,3 +19,14 @@ for (let i = 0; i < arr.length + 1; i++) {
         return i
     }
 }
+
+
+//O(n) bit-manipulation solution where n is the number of elements in the list, and uses O(1) space
+
+let ans = nums.length 
+
+for (i = 0; i < nums.length; i++) {
+    ans ^= i ^ nums[i]
+}
+
+return ans
